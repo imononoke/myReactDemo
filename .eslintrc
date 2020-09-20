@@ -1,0 +1,22 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "parser": "typescript-eslint-parser",
+    "plugins": [
+        "react",
+        "typescript"
+    ],
+    "rules": {
+        //... 自行添加规则
+    }
+}
