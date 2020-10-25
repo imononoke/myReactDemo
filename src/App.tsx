@@ -1,6 +1,7 @@
 import * as React from 'react';
+import DynForm from './DynForm';
 
-export default class App extends React.Component {
+export default class App extends React.Component<any, any> {
 
     state = {
         count: 0,
@@ -21,6 +22,9 @@ export default class App extends React.Component {
                 <h1>hello, Isa</h1>
                 <button onClick={this.onAdd}>Add</button>
                 <p>{count}</p>
+                <DynForm
+                    loading={true}
+                />
             </div>
         );
     }

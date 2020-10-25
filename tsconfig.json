@@ -1,16 +1,19 @@
 {
     "compilerOptions": {
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
         "module": "esnext",
         "target": "es5",
         "lib": [
-            "es6",
-            "dom"
+            "es2015",
+            "dom",
+            "es2015.promise"
         ],
         "sourceMap": true,
         "jsx": "react",
-        "noImplicitAny": true,
+        "strict": false,
+        "noImplicitAny": false,
         "allowJs": true,
-        "moduleResolution": "node",
     },
     "include": [
         "src/*"
